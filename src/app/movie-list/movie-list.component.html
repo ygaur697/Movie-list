@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let result of moviedata.results;">
+
+
+      <img style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
+        src="{{result.poster_path}}" width="170px" height="300px">
+      <p>{{result.title}}</p>
+
+
+    </div>
+    <div class="head">
+      <div class="tab">
+        <p style="float:left;"> page:&nbsp;{{this.pageNo}} &nbsp;of &nbsp;996 </p>
+        <div class="pagination">
+          <a (click)="prevPage()" href="#">❮</a>
+          <a (click)="nextPage()" href="#">❯</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

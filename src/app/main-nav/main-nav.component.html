@@ -1,0 +1,31 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
+
+    <mat-nav-list>
+      <mat-list-item>
+        <h5 style="font-size: 16px; padding-top:25px; outline: 0;" matline routerLink="/Trending"
+          routerLinkActive="active-link">
+          Trending Charts</h5>
+      </mat-list-item>
+      <mat-list-item>
+        <h5 style="font-size: 16px; padding-top:25px;outline: 0;" matline routerLink="/movie"
+          routerLinkActive="active-link">
+          Popular Movies</h5>
+      </mat-list-item>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color:#343941;border-color:#343941;  border:unset !important;}
+html {
+    background-color: #343941;
+    border-color:#343941;
+    border:unset !important;
+}
+.mat-drawer-inner-container {
+    background-color: #343941;
+    border-color:#343941;
+}
+.row{
+    padding-top:25px;
+    padding-bottom:15px;
+}
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content
+{
+    height: 85px;
+    color: white;
+}
+mat-list-item-content:active, mat-list-item-content:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+  }

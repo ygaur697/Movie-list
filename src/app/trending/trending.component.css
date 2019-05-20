@@ -1,0 +1,10 @@
+.graph{
+    width:860px;
+    height:562px;
+    position: relative;
+    right:170px;
+    float: right;
+}
+canvas{
+    height:570px !important;
+}
