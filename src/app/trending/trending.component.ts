@@ -36,6 +36,7 @@ export class TrendingComponent implements OnInit {
     data: [],
     label: '',
     backgroundColor: "#4FFFC3",
+    color: "#fffff"
   }];
   pageNo: number = 1;
   moviedata = [];
