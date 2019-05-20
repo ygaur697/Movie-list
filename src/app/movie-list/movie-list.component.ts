@@ -15,9 +15,11 @@ import { PageEvent } from '@angular/material';
 })
 export class MovieListComponent implements OnInit {
 
-  public moviedata: any[];
+  public moviedata = [];
 
-
+  public title: any;
+  public final: any;
+  public tite: any;
 
   public updatedurl: string = 'https://image.tmdb.org/t/p/original/';
   length = 100;
@@ -49,6 +51,10 @@ export class MovieListComponent implements OnInit {
 
 
       );*/
+
+
+
+
   }
 
   fetchMovieData() {
@@ -63,7 +69,11 @@ export class MovieListComponent implements OnInit {
 
         }
 
+
+
       }
+
+
       )
   }
 

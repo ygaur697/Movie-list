@@ -25,3 +25,6 @@ mat-list-item-content:active, mat-list-item-content:focus {
     border: none;
     -moz-outline-style: none;
   }
+  .mat-drawer-side{
+      border-right:unset;
+  }

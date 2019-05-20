@@ -24,25 +24,22 @@ export class TrendingComponent implements OnInit {
 
   public barChartOptions = {
     scaleShowVerticalLines: false,
+    colors: ['#0000ff'],
     responsive: true,
-
+    backgroundColor: ['#0000ff']
   };
+
   public barChartLabels = [];
   public barChartType = 'bar';
   public barChartLegend = true;
   public barChartData: any = [{
     data: [],
-    label: ''
+    label: '',
+    backgroundColor: "#4FFFC3",
   }];
   pageNo: number = 1;
   moviedata = [];
-  datasets: [
-    {
 
-      borderColor: '#3cba9f',
-      fill: false
-    }
-  ]
 
   ngOnInit() {
 
@@ -60,7 +57,7 @@ export class TrendingComponent implements OnInit {
         this.barChartData[0].label = 'Rating';
 
 
-
+        console.log("DATA !", this.barChartData)
       }
 
 
